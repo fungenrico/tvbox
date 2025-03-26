@@ -11,7 +11,7 @@ var rule = {
     limit:5,
     play_parse:true,
     lazy:'',
-    一级:'.posts&&.video_9s;h3&&Text;img&&src;.meta&&Text;a&&href',
+    一级:'.grid.grid-cols-2 div&&a;.lozad.w-full&&alt;.lozad.w-full&&data-src;.absolute.bottom-1&&Text;a&&href',
     二级:'*',
 }
 
