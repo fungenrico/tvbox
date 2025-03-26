@@ -1,7 +1,6 @@
 var rule = {
     title:'Missav',
     host:'https://missav.ai',
-	searchUrl:'/cn/search/**',
     url:'/cn/fyclass?page=fypage',
     headers:{
         'User-Agent':'MOBILE_UA'
@@ -14,9 +13,5 @@ var rule = {
     lazy:'',
     一级:'.grid.grid-cols-2 div&&a;.lozad.w-full&&alt;.lozad.w-full&&data-src;.absolute.bottom-1&&Text;a&&href',
     二级:'*',
-	搜索:'.grid.grid-cols-2 div&&a;.lozad.w-full&&alt;.lozad.w-full&&data-src;.absolute.bottom-1&&Text;a&&href',
-	searchable:1,//是否启用全局搜索,
-    quickSearch:1,//是否启用快速搜索,
-    filterable:0,//是否启用分类筛选,
 }
 
