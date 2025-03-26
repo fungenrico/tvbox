@@ -19,3 +19,4 @@ var rule = {
     quickSearch:1,//是否启用快速搜索,
     filterable:0,//是否启用分类筛选,
 }
+
