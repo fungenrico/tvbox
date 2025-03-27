@@ -280,7 +280,7 @@ async function category(tid, pg, filter, extend) {
         
         html = await request(urls)
          $=load(html)
-         items = $('div.thumbnail group')
+         items = $('div.thumbnail')
          videos=_.map(items,(item)=>{
           const a = $(item).find('a')[0]
           const aa=$($(item).find('a')[1]).text()
@@ -368,13 +368,13 @@ async function search(wd, quick,pg) {
 	if (pg <= 0) pg = 1;
     const html = await request(url + '/search/' + wd+"?page="+pg);
     const $=load(html)
-        const items = $('div.thumbnail group')
+        const items = $('a.preview')
         let videos=_.map(items,(item)=>{
           const a = $(item).find('a')[0]
          // console.log(a)
           const vid= a.attribs.href
           const img =$(a).find('img')[0].attribs['data-src']
-          const title=$(a).find('img')[0].attribs.alt
+          const title=$(a).find('img')[0].attribs['alt']
           return {
                  vod_id: vid,
                   vod_name: title,
