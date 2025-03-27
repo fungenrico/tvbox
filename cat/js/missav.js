@@ -1,6 +1,6 @@
 import { Crypto, load, _ } from './lib/cat.js';
 
-let key = 'misaav';
+let key = 'missav';
 let url = 'https://missav.ws';
 let siteKey = '';
 let siteType = 0;
