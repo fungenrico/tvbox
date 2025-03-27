@@ -366,7 +366,7 @@ async function play(flag, id, flags) {
 
 async function search(wd, quick,pg) {
 	if (pg <= 0) pg = 1;
-    const html = await request(url + '/dm621/cn/search/' + wd+"?page="+pg);
+    const html = await request(url + '/search/' + wd+"?page="+pg);
     const $=load(html)
         const items = $('div.thumbnail')
         let videos=_.map(items,(item)=>{
